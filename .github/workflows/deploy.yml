@@ -26,7 +26,7 @@ jobs:
             mkdir ~/webapp/github-actions-cicd-pipeline
             cd ~/webapp/github-actions-cicd-pipeline
             git pull
-            docker-compose down--volumes --remove-orphans
+            docker-compose down --volumes --remove-orphans
             docker-compose up -d --build
          
         
