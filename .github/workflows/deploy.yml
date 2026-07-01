@@ -23,7 +23,8 @@ jobs:
           username: ${{secrets.EC2_USER}}
           key: ${{secrets.EC2_KEY}}
           script: |
-            cd ~/webapp/github-actions-demo
+            mkdir ~/webapp/github-actions-cicd-pipeline
+            cd ~/webapp/github-actions-cicd-pipeline
             git pull
             docker-compose up -d --build
          
